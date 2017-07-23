@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="NXMobileHandsOn.Views.LoginPage">
+    <StackLayout>
+        <Entry x:Name="EntryKaiCode" Placeholder="会社コード" Text="{Binding KaiCode.Value}" />
+        <Entry x:Name="EntryUserId" Placeholder="ユーザーID" Text="{Binding UserId.Value}" />
+        <Entry x:Name="EntryPassword" Placeholder="パスワード" IsPassword="True" Text="{Binding Password.Value}" />
+        <DatePicker x:Name="DpLoginDate" Format="yyyy/MM/dd" Date="{Binding LoginDate.Value}" />
+        <Button x:Name="BtnLogin" Text="ログイン" Command="{Binding LoginCommand}" />
+        <Label x:Name="LblErroMessage" Text="{Binding ErrorMessage.Value}" TextColor="Red" />
+    </StackLayout>
+</ContentPage>

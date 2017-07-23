@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SSJKK.NX.SystemCommon.CM.WebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SSJKK.NX.SystemCommon.CM.WebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.Utility" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.WebService.Common" />
+  <xs:complexType name="NLC00100SIParam">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.WebService.Common" base="q1:NXParameterBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AsyncServiceList" nillable="true" type="q2:ArrayOfstring" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.Utility" minOccurs="0" name="NshKey" nillable="true" type="q3:NXAuthenticationKey" />
+          <xs:element minOccurs="0" name="PollingGap" type="xs:int" />
+          <xs:element minOccurs="0" name="Pswd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PswdStatKbn" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NLC00100SIParam" nillable="true" type="tns:NLC00100SIParam" />
+  <xs:complexType name="NLC00100SICoreKaiData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.WebService.Common" base="q4:NXParameterBaseV2">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CoreKaiListPCParamList" nillable="true" type="tns:ArrayOfNLC00100SICoreKaiListParam" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NLC00100SICoreKaiData" nillable="true" type="tns:NLC00100SICoreKaiData" />
+  <xs:complexType name="ArrayOfNLC00100SICoreKaiListParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NLC00100SICoreKaiListParam" nillable="true" type="tns:NLC00100SICoreKaiListParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNLC00100SICoreKaiListParam" nillable="true" type="tns:ArrayOfNLC00100SICoreKaiListParam" />
+  <xs:complexType name="NLC00100SICoreKaiListParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kaiCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kaiNameS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NLC00100SICoreKaiListParam" nillable="true" type="tns:NLC00100SICoreKaiListParam" />
+  <xs:complexType name="NLC00100SIParamV2">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.WebService.Common" base="q5:NXParameterBaseV2">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AsyncServiceList" nillable="true" type="q6:ArrayOfstring" />
+          <xs:element minOccurs="0" name="CoreUserName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SSJKK.NX.Framework.Utility" minOccurs="0" name="NshKey" nillable="true" type="q7:NXAuthenticationKey" />
+          <xs:element minOccurs="0" name="PollingGap" type="xs:int" />
+          <xs:element minOccurs="0" name="Pswd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PswdStatKbn" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NLC00100SIParamV2" nillable="true" type="tns:NLC00100SIParamV2" />
+</xs:schema>

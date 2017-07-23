@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ca3f0418-947f-43e6-b779-5b9836a23383" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="3f689fe2-d8a5-4881-8acb-e466d861689f" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="75d05689-a40d-4679-a02d-ce667188fdfc" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c7de09a5-3e7c-4929-a56c-6c7c0438ba30" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="SSJKK.NX.SystemCommon.CM.WebService.xsd" MetadataType="Schema" ID="4e62d87b-2295-4902-aeb9-a06944344760" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="SSJKK.NX.Framework.WebService.Common.xsd" MetadataType="Schema" ID="349cc10e-1b9a-4d96-9e04-8324b3ac2026" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="48ca833c-3075-43ff-9901-e00908574133" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+    <MetadataFile FileName="SSJKK.NX.Framework.Utility.xsd" MetadataType="Schema" ID="8a563e94-3d80-4f1e-9984-635f7c697c6c" SourceId="1" SourceUrl="https://nxcloud-0-nxv2.superstream.co.jp/SuperStreamNX/SC/NLC00100SI.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
